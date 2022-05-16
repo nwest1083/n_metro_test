@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>false</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow write for all fields in x_746768_metrotime_user_roles, for users with role x_746768_metrotime.user.</description>
+        <name>x_746768_metrotime_user_roles.*</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-28 12:03:44</sys_created_on>
+        <sys_id>b88b098f2f8b45108f2cd4a72799b6c6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles.*</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_security_acl_b88b098f2f8b45108f2cd4a72799b6c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 09:53:17</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_security_acl_b88b098f2f8b45108f2cd4a72799b6c6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>false</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow write for all fields in x_746768_metrotime_user_roles, for users with role x_746768_metrotime.user.</description><name>x_746768_metrotime_user_roles.*</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-04-28 12:03:44</sys_created_on><sys_id>b88b098f2f8b45108f2cd4a72799b6c6</sys_id><sys_mod_count>4</sys_mod_count><sys_name>x_746768_metrotime_user_roles.*</sys_name><sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package><sys_policy/><sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope><sys_update_name>sys_security_acl_b88b098f2f8b45108f2cd4a72799b6c6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-02 09:53:17</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>688251648</payload_hash>
+        <record_name>x_746768_metrotime_user_roles.*</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 09:53:17</sys_created_on>
+        <sys_id>8a241ddc2f5389108f2cd4a72799b6b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1808430461b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 09:53:17</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>82241ddc0a538910cc08c23e4265c4b0</update_guid>
+        <update_guid_history>82241ddc0a538910cc08c23e4265c4b0:688251648,f05d818305cb4510db44f4e758f0d307:1801613191,dc5c49039acb4510736354467ca17f0d:688251648,c9bb498f088b451061d5e766be457885:1801613191,71ab890389cb4510918f0f29e7a1b563:2012986893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 11:25:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>2a5a8dc650034bbca32df5d9e3577fa4</sys_id>
+        <sys_metadata>b88b098f2f8b45108f2cd4a72799b6c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles.*</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent display_value="x_746768_metrotime_user_roles">0030a0752f8341108f2cd4a72799b601</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_b88b098f2f8b45108f2cd4a72799b6c6</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_b88b098f2f8b45108f2cd4a72799b6c6">8a241ddc2f5389108f2cd4a72799b6b0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 11:25:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

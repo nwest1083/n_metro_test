@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2022-05-16 20:18:32">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-07 19:59:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9dee41ce2fdb81108f2cd4a72799b60a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA MetroTime Admin Dash - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_portal_page_9dee41ce2fdb81108f2cd4a72799b60a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-07 19:59:40</sys_updated_on>
+        <title>PA MetroTime Admin Dash - New Tab</title>
+        <user/>
+        <view>pa_metrotime_admin_dash_-_new_tab</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA MetroTime Admin Dash - New Tab">9dee41ce2fdb81108f2cd4a72799b60a</page>
+                <summary>MetroTime State of All Requests</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                <sys_id>2fa18cfa2f1b01108f2cd4a72799b607</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>2fa18cfa2f1b01108f2cd4a72799b608</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>donut</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>6ba18cfa2f1b01108f2cd4a72799b608</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>a7a18cfa2f1b01108f2cd4a72799b608</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>afa18cfa2f1b01108f2cd4a72799b607</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>fcc0c4ba2f1b01108f2cd4a72799b63a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>e3a18cfa2f1b01108f2cd4a72799b608</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 05/09/2022 18:17:46">2fa18cfa2f1b01108f2cd4a72799b607</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-09 22:17:46</sys_created_on>
+                        <sys_id>efa18cfa2f1b01108f2cd4a72799b608</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-09 22:17:46</sys_updated_on>
+                        <value>MetroTime State of All Requests</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA MetroTime Admin Dash - New Tab">9dee41ce2fdb81108f2cd4a72799b60a</page>
+                <summary>Assigned MetroTime Requests</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                <sys_id>540059ce2fdb81108f2cd4a72799b613</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>180059ce2fdb81108f2cd4a72799b614</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>Assigned MetroTime Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>1c0059ce2fdb81108f2cd4a72799b613</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>540059ce2fdb81108f2cd4a72799b614</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>donut</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>900059ce2fdb81108f2cd4a72799b614</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>d40059ce2fdb81108f2cd4a72799b613</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>f04085192f1301108f2cd4a72799b6cd</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 05/07/2022 16:04:32">540059ce2fdb81108f2cd4a72799b613</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:04:32</sys_created_on>
+                        <sys_id>dc0059ce2fdb81108f2cd4a72799b613</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:04:32</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA MetroTime Admin Dash - New Tab">9dee41ce2fdb81108f2cd4a72799b60a</page>
+                <summary>My Assigned MetroTime Requests</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                <sys_id>57eecd8e2fdb81108f2cd4a72799b628</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>13eecd8e2fdb81108f2cd4a72799b62a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>1beecd8e2fdb81108f2cd4a72799b629</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>1feecd8e2fdb81108f2cd4a72799b628</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>57eecd8e2fdb81108f2cd4a72799b629</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>93eecd8e2fdb81108f2cd4a72799b629</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>d7eecd8e2fdb81108f2cd4a72799b628</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>9b814d592f1301108f2cd4a72799b65b</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>dbeecd8e2fdb81108f2cd4a72799b629</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>My Assigned MetroTime Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 05/07/2022 15:59:49">57eecd8e2fdb81108f2cd4a72799b628</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 19:59:49</sys_created_on>
+                        <sys_id>dfeecd8e2fdb81108f2cd4a72799b628</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 19:59:49</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA MetroTime Admin Dash - New Tab">9dee41ce2fdb81108f2cd4a72799b60a</page>
+                <summary>Unapproved MetroTime Requests</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                <sys_id>9cf059022f1f81108f2cd4a72799b626</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>20f059022f1f81108f2cd4a72799b627</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>55b095022f1f81108f2cd4a72799b6ef</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>28f059022f1f81108f2cd4a72799b627</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>60f059022f1f81108f2cd4a72799b628</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>Unapproved MetroTime Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>64f059022f1f81108f2cd4a72799b627</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>acf059022f1f81108f2cd4a72799b627</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 05/07/2022 16:08:38">9cf059022f1f81108f2cd4a72799b626</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:08:38</sys_created_on>
+                        <sys_id>e8f059022f1f81108f2cd4a72799b627</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:08:38</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA MetroTime Admin Dash - New Tab">9dee41ce2fdb81108f2cd4a72799b60a</page>
+                <summary>Assigned to MetroTime Requests</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                <sys_id>ff2091022f1f81108f2cd4a72799b6af</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>3f2091022f1f81108f2cd4a72799b6b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>732091022f1f81108f2cd4a72799b6b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>cac04d192f1301108f2cd4a72799b64b</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>7b2091022f1f81108f2cd4a72799b6b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>b32091022f1f81108f2cd4a72799b6b1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>Assigned to MetroTime Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>b72091022f1f81108f2cd4a72799b6b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 05/07/2022 16:05:18">ff2091022f1f81108f2cd4a72799b6af</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-05-07 20:05:18</sys_created_on>
+                        <sys_id>ff2091022f1f81108f2cd4a72799b6b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-05-07 20:05:18</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

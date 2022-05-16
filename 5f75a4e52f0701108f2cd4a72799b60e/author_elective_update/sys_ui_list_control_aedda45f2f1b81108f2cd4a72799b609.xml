@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control">
+    <sys_ui_list_control action="DELETE">
+        <columns_condition/>
+        <disable_nlq>false</disable_nlq>
+        <edit_condition/>
+        <edit_default_filter/>
+        <edit_roles/>
+        <empty_condition/>
+        <filter_condition/>
+        <filter_roles>x_746768_metrotime.System Admin,x_746768_metrotime.WMATA Department Heads,x_746768_metrotime.admin,x_746768_metrotime.payroll_admin</filter_roles>
+        <hierarchical_lists>false</hierarchical_lists>
+        <label/>
+        <link_condition/>
+        <link_roles/>
+        <list_edit_insert_row>false</list_edit_insert_row>
+        <list_edit_ref_qual_tag/>
+        <list_edit_type/>
+        <name>x_746768_metrotime_user_roles</name>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_count>false</omit_count>
+        <omit_count_views>false</omit_count_views>
+        <omit_count_views_list/>
+        <omit_drilldown_link>false</omit_drilldown_link>
+        <omit_edit_button>true</omit_edit_button>
+        <omit_filters>false</omit_filters>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <omit_new_button>false</omit_new_button>
+        <related_list/>
+        <sys_class_name>sys_ui_list_control</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 14:50:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aedda45f2f1b81108f2cd4a72799b609</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_ui_list_control_aedda45f2f1b81108f2cd4a72799b609</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 14:50:18</sys_updated_on>
+    </sys_ui_list_control>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_ui_list_control_aedda45f2f1b81108f2cd4a72799b609</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control"><sys_ui_list_control action="INSERT_OR_UPDATE"><columns_condition/><disable_nlq>false</disable_nlq><edit_condition/><edit_default_filter/><edit_roles/><empty_condition/><filter_condition/><filter_roles>x_746768_metrotime.System Admin,x_746768_metrotime.WMATA Department Heads,x_746768_metrotime.admin,x_746768_metrotime.payroll_admin</filter_roles><hierarchical_lists>false</hierarchical_lists><label/><link_condition/><link_roles/><list_edit_insert_row>false</list_edit_insert_row><list_edit_ref_qual_tag/><list_edit_type/><name>x_746768_metrotime_user_roles</name><new_condition/><new_roles/><omit_columns_if_empty>false</omit_columns_if_empty><omit_count>false</omit_count><omit_count_views>false</omit_count_views><omit_count_views_list/><omit_drilldown_link>false</omit_drilldown_link><omit_edit_button>true</omit_edit_button><omit_filters>false</omit_filters><omit_if_empty>false</omit_if_empty><omit_links>false</omit_links><omit_new_button>false</omit_new_button><related_list/><sys_class_name>sys_ui_list_control</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-11 14:50:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aedda45f2f1b81108f2cd4a72799b609</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_746768_metrotime_user_roles</sys_name><sys_overrides display_value="">global</sys_overrides><sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package><sys_policy/><sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope><sys_update_name>sys_ui_list_control_aedda45f2f1b81108f2cd4a72799b609</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-11 14:50:18</sys_updated_on></sys_ui_list_control></record_update>]]></payload>
+        <payload_hash>1302279811</payload_hash>
+        <record_name>x_746768_metrotime_user_roles</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 14:50:18</sys_created_on>
+        <sys_id>a47eac5f2f1b81108f2cd4a72799b662</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180b3996f9f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 14:50:18</sys_updated_on>
+        <type>List Control</type>
+        <update_guid>ec7eac5f6f1b8110cc4646e95fc2b061</update_guid>
+        <update_guid_history>ec7eac5f6f1b8110cc4646e95fc2b061:1302279811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 18:37:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list_control">sys_ui_list_control</sys_db_object>
+        <sys_id>735e2035d9f249b4845c1d12d72c2c31</sys_id>
+        <sys_metadata>aedda45f2f1b81108f2cd4a72799b609</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent display_value="User Roles">75df5cf12f8341108f2cd4a72799b6ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_ui_list_control_aedda45f2f1b81108f2cd4a72799b609</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_control_aedda45f2f1b81108f2cd4a72799b609">a47eac5f2f1b81108f2cd4a72799b662</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 18:37:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

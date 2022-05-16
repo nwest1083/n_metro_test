@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>On entry of the Employee in the Employee field populate Employee Number and Manager and Manager Number</description>
+        <field>u_employee_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Update User Information Section</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+   g_form.setValue('u_emp_id','');
+   g_form.setValue('u_manager_name','');
+   g_form.SetValue('u_department','');
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var employee = g_form.getReference('u_employee_name');
+
+	function setValues(employee) { //reference is passed into callback as first arguments
+
+  g_form.setValue('u_emp_id',employee.employee_number);
+  g_form.setValue('u_manager_name',employee.manager);
+  g_form.setValue('u_department',employee.department);
+	}  
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 22:36:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91fe5c2b2f07c5108f2cd4a72799b678</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update User Information Section</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_script_client_91fe5c2b2f07c5108f2cd4a72799b678</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 22:41:28</sys_updated_on>
+        <table>x_746768_metrotime_user_roles</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_script_client_91fe5c2b2f07c5108f2cd4a72799b678</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;On entry of the Employee in the Employee field populate Employee Number and Manager and Manager Number&lt;/description&gt;&lt;field&gt;u_employee_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Update User Information Section&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+   g_form.setValue('u_emp_id','');
+   g_form.setValue('u_manager_name','');
+   g_form.SetValue('u_department','');
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	var employee = g_form.getReference('u_employee_name');
+
+	function setValues(employee) { //reference is passed into callback as first arguments
+
+  g_form.setValue('u_emp_id',employee.employee_number);
+  g_form.setValue('u_manager_name',employee.manager);
+  g_form.setValue('u_department',employee.department);
+	}  
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-29 22:36:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;91fe5c2b2f07c5108f2cd4a72799b678&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Update User Information Section&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="MetroTime" source="x_746768_metrotime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="MetroTime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_91fe5c2b2f07c5108f2cd4a72799b678&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-29 22:41:28&lt;/sys_updated_on&gt;&lt;table&gt;x_746768_metrotime_user_roles&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1668278222</payload_hash>
+        <record_name>Update User Information Section</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 22:41:29</sys_created_on>
+        <sys_id>6937e0232f47c5108f2cd4a72799b617</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180777c7ed40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 22:41:29</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>a137e0238c47c510c663c634145a6a17</update_guid>
+        <update_guid_history>a137e0238c47c510c663c634145a6a17:-1668278222,c826a0ef0e07c510a083b0e5c0fa9321:142356395</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 22:44:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>345eb4450c7d4dd88b153c48dc548391</sys_id>
+        <sys_metadata>91fe5c2b2f07c5108f2cd4a72799b678</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update User Information Section</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent display_value="User Roles">75df5cf12f8341108f2cd4a72799b6ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_script_client_91fe5c2b2f07c5108f2cd4a72799b678</sys_update_name>
+        <sys_update_version display_value="sys_script_client_91fe5c2b2f07c5108f2cd4a72799b678">6937e0232f47c5108f2cd4a72799b617</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 22:44:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 21:48:54</sys_created_on>
+        <sys_id>a82bdce32f07c5108f2cd4a72799b6cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles.u_app_dept_dir.x_746768_metrotime.WMATA Department Heads</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_security_acl display_value="x_746768_metrotime_user_roles.u_app_dept_dir">c50b5c272f07c5108f2cd4a72799b650</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a82bdce32f07c5108f2cd4a72799b6cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:48:54</sys_updated_on>
+        <sys_user_role display_value="x_746768_metrotime.WMATA Department Heads" name="x_746768_metrotime.WMATA Department Heads">43e91ce32f07c5108f2cd4a72799b694</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_security_acl_role_a82bdce32f07c5108f2cd4a72799b6cc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-04-29 21:48:54</sys_created_on><sys_id>a82bdce32f07c5108f2cd4a72799b6cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_746768_metrotime_user_roles.u_app_dept_dir.x_746768_metrotime.WMATA Department Heads</sys_name><sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package><sys_policy/><sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope><sys_security_acl display_value="x_746768_metrotime_user_roles.u_app_dept_dir">c50b5c272f07c5108f2cd4a72799b650</sys_security_acl><sys_update_name>sys_security_acl_role_a82bdce32f07c5108f2cd4a72799b6cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-04-29 21:48:54</sys_updated_on><sys_user_role display_value="x_746768_metrotime.WMATA Department Heads" name="x_746768_metrotime.WMATA Department Heads">43e91ce32f07c5108f2cd4a72799b694</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1862309221</payload_hash>
+        <record_name>x_746768_metrotime_user_roles.u_app_dept_dir.x_746768_metrotime.WMATA Department Heads</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-29 21:48:54</sys_created_on>
+        <sys_id>db2b10672f07c5108f2cd4a72799b61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180774c5c370000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-29 21:48:54</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>172b1067b707c51028313ce62036b71c</update_guid>
+        <update_guid_history>172b1067b707c51028313ce62036b71c:-1862309221</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_746768_metrotime_user_roles.u_app_dept_dir.x_746768_metrotime.WMATA Department">7b11c3d02f1b89108f2cd4a72799b619</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 17:49:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>86632840692d4db5b41f86028d6d6d61</sys_id>
+        <sys_metadata>a82bdce32f07c5108f2cd4a72799b6cc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_746768_metrotime_user_roles.u_app_dept_dir.x_746768_metrotime.WMATA Department Heads</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a82bdce32f07c5108f2cd4a72799b6cc</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a82bdce32f07c5108f2cd4a72799b6cc">db2b10672f07c5108f2cd4a72799b61c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 17:49:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

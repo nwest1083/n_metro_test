@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch1-03-02-2022_03-17-2022_1811.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify of New Role creation and pending approval/assignement</description>
+        <internal_name>metrotime_new_role_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current.u_requested_by.email","label":"Trigger - Record Updated➛User Roles Record➛Requested by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛User Roles Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"state","choices":[{"used":false,"label":"Pending","image":"","reference":false,"selected":false,"rawLabel":"Pending","missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"selected":false,"rawLabel":"Open","missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"selected":false,"rawLabel":"Work in Progress","missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"selected":false,"rawLabel":"Closed Complete","missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"selected":false,"rawLabel":"Closed Incomplete","missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"selected":false,"rawLabel":"Closed Skipped","missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"Updated_1.current.u_requested_by","label":"Trigger - Record Updated➛User Roles Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_requested_by"},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛User Roles Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_746768_metrotime_user_roles","column_name":"number"},{"name":"Updated_1.current.u_role_type","label":"Trigger - Record Updated➛User Roles Record➛Role Type","reference":"","reference_display":"Role Type","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_role_type","choices":[{"used":false,"label":"Timekeeper","image":"","reference":false,"selected":false,"rawLabel":"Timekeeper","missing":false,"value":"timekeeper","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Administrator","image":"","reference":false,"selected":false,"rawLabel":"Payroll Administrator","missing":false,"value":"payroll administrator","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Manager","image":"","reference":false,"selected":false,"rawLabel":"Payroll Manager","missing":false,"value":"payroll manager","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Processor","image":"","reference":false,"selected":false,"rawLabel":"Payroll Processor","missing":false,"value":"payroll processor","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"FMLA Admin","image":"","reference":false,"selected":false,"rawLabel":"FMLA Admin","missing":false,"value":"fmla admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"IT Admin","image":"","reference":false,"selected":false,"rawLabel":"IT Admin","missing":false,"value":"it admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Leave Admin","image":"","reference":false,"selected":false,"rawLabel":"Leave Admin","missing":false,"value":"leave admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Reports Admin","image":"","reference":false,"selected":false,"rawLabel":"Reports Admin","missing":false,"value":"reports admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Workforce Admin","image":"","reference":false,"selected":false,"rawLabel":"Workforce Admin","missing":false,"value":"workforce admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Support Team","image":"","reference":false,"selected":false,"rawLabel":"Support Team","missing":false,"value":"support team","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"System Administrator","image":"","reference":false,"selected":false,"rawLabel":"System Administrator","missing":false,"value":"system administrator","parameters":{"name":"x_746768_metrotime_user_roles"}}]},{"name":"Updated_1.current.u_employee_name.first_name","label":"Trigger - Record Updated➛User Roles Record➛Employee Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Updated_1.current.u_employee_name.email","label":"Trigger - Record Updated➛User Roles Record➛Employee Name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.table_name","label":"3 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.record","label":"3 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.record.assignment_group.email","label":"1 - Update Record➛User Roles Record➛Assignment group➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email"},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.__dont_treat_as_error__","label":"10 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.__action_status__","label":"10 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.email","label":"10 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_payroll.name","label":"Trigger - Record Created➛User Roles Record➛Approved by (Payroll)➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.table_name","label":"4 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.record","label":"4 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_dept_dir.department.name","label":"Trigger - Record Created➛User Roles Record➛Approved by (Department Director)➛Department➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_department","column_name":"name"},{"name":"Created_1.current.u_requested_by.name","label":"Trigger - Record Created➛User Roles Record➛Requested by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.cb5990e32f07c5108f2cd4a72799b612}}","label":"Department Heads - Record Created","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"{{static.cc79743d2fc341108f2cd4a72799b61a}}","label":"Payroll - Record Created","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.__dont_treat_as_error__","label":"5 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.__action_status__","label":"5 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_department.dept_head.first_name","label":"Trigger - Record Created➛User Roles Record➛Department Name➛Department head➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_department.dept_head.email","label":"Trigger - Record Created➛User Roles Record➛Department Name➛Department head➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.table_name","label":"10 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.record","label":"10 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.table_name","label":"6 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.record","label":"6 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.table_name","label":"5 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.record","label":"5 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_role_type","label":"Trigger - Record Created➛User Roles Record➛Role Type","reference":"","reference_display":"Role Type","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_role_type","choices":[{"used":false,"label":"Timekeeper","image":"","reference":false,"selected":false,"rawLabel":"Timekeeper","missing":false,"value":"timekeeper","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Administrator","image":"","reference":false,"selected":false,"rawLabel":"Payroll Administrator","missing":false,"value":"payroll administrator","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Manager","image":"","reference":false,"selected":false,"rawLabel":"Payroll Manager","missing":false,"value":"payroll manager","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Processor","image":"","reference":false,"selected":false,"rawLabel":"Payroll Processor","missing":false,"value":"payroll processor","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"FMLA Admin","image":"","reference":false,"selected":false,"rawLabel":"FMLA Admin","missing":false,"value":"fmla admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"IT Admin","image":"","reference":false,"selected":false,"rawLabel":"IT Admin","missing":false,"value":"it admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Leave Admin","image":"","reference":false,"selected":false,"rawLabel":"Leave Admin","missing":false,"value":"leave admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Reports Admin","image":"","reference":false,"selected":false,"rawLabel":"Reports Admin","missing":false,"value":"reports admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Workforce Admin","image":"","reference":false,"selected":false,"rawLabel":"Workforce Admin","missing":false,"value":"workforce admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Support Team","image":"","reference":false,"selected":false,"rawLabel":"Support Team","missing":false,"value":"support team","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"System Administrator","image":"","reference":false,"selected":false,"rawLabel":"System Administrator","missing":false,"value":"system administrator","parameters":{"name":"x_746768_metrotime_user_roles"}}]},{"name":"Created_1.current.number","label":"Trigger - Record Created➛User Roles Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_746768_metrotime_user_roles","column_name":"number"},{"name":"Created_1.current.u_manager_name.first_name","label":"Trigger - Record Created➛User Roles Record➛Manager Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_manager_name.email","label":"Trigger - Record Created➛User Roles Record➛Manager Name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.record","label":"1 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.table_name","label":"1 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_dept_dir","label":"Trigger - Record Created➛User Roles Record➛Approved by (Department Director)","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_app_dept_dir"},{"name":"Created_1.current.u_app_payroll","label":"Trigger - Record Created➛User Roles Record➛Approved by (Payroll)","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_app_payroll"},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛User Roles Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"approval","choices":[{"used":false,"label":"Not Yet Requested","image":"","reference":false,"selected":false,"rawLabel":"Not Yet Requested","missing":false,"value":"not requested","parameters":{"name":"task"}},{"used":false,"label":"Requested","image":"","reference":false,"selected":false,"rawLabel":"Requested","missing":false,"value":"requested","parameters":{"name":"task"}},{"used":false,"label":"Approved","image":"","reference":false,"selected":false,"rawLabel":"Approved","missing":false,"value":"approved","parameters":{"name":"task"}},{"used":false,"label":"Rejected","image":"","reference":false,"selected":false,"rawLabel":"Rejected","missing":false,"value":"rejected","parameters":{"name":"task"}}]},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.assignment_group.email","label":"Trigger - Record Created➛User Roles Record➛Assignment group➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email"},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.email","label":"6 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.__action_status__","label":"6 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.__dont_treat_as_error__","label":"6 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requested_by.email","label":"Trigger - Record Created➛User Roles Record➛Requested by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_requested_by.first_name","label":"Trigger - Record Created➛User Roles Record➛Requested by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"}]</label_cache>
+        <master_snapshot>b68a51942f9389108f2cd4a72799b659</master_snapshot>
+        <name>MetroTime New Role Notification</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>0e2781602fa341108f2cd4a72799b696</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:39:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bf24a042f9749108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>MetroTime New Role Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_hub_flow_1bf24a042f9749108f2cd4a72799b6b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_746768_metrotime_user_roles">state=3<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:50:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e2781602fa341108f2cd4a72799b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <table>x_746768_metrotime_user_roles</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"862781602fa341108f2cd4a72799b697","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>1bf24a042f9749108f2cd4a72799b6b6</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:50:41</sys_created_on>
+        <sys_id>862781602fa341108f2cd4a72799b697</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <trigger display_value="">0e2781602fa341108f2cd4a72799b696</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>862781602fa341108f2cd4a72799b697</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:50:41</sys_created_on>
+        <sys_id>4e2781602fa341108f2cd4a72799b697</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN862781602fa341108f2cd4a72799b697"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN4a02452c2f6341108f2cd4a72799b6aa"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>4a02452c2f6341108f2cd4a72799b6aa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:42</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a02452c2f6341108f2cd4a72799b6aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4a02452c2f6341108f2cd4a72799b6aa</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>0a02452c2f6341108f2cd4a72799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:17</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4a02452c2f6341108f2cd4a72799b6aa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>0e02452c2f6341108f2cd4a72799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:17</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4a02452c2f6341108f2cd4a72799b6aa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>ce02452c2f6341108f2cd4a72799b6ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:17</sys_updated_on>
+        <value>x_746768_metrotime_user_roles</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=4a02452c2f6341108f2cd4a72799b6aa"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN13f24a042f9749108f2cd4a72799b6b7"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1bf24a042f9749108f2cd4a72799b6b6</id>
+        <name>MetroTime New Role Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:39:25</sys_created_on>
+        <sys_id>13f24a042f9749108f2cd4a72799b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 18:39:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=13f24a042f9749108f2cd4a72799b6b7"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN2215c2c42f9749108f2cd4a72799b65f,4602452c2f6341108f2cd4a72799b6a3,f215c2c42f9749108f2cd4a72799b663"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</model>
+        <model_id>1bf24a042f9749108f2cd4a72799b6b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:48:40</sys_created_on>
+        <sys_id>2215c2c42f9749108f2cd4a72799b65f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD75278160c8a34110b1c162dd7f2c052e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</model>
+        <model_id>1bf24a042f9749108f2cd4a72799b6b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>4602452c2f6341108f2cd4a72799b6a3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</model>
+        <model_id>1bf24a042f9749108f2cd4a72799b6b6</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:48:40</sys_created_on>
+        <sys_id>f215c2c42f9749108f2cd4a72799b663</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN9602452c2f6341108f2cd4a72799b6b3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>9602452c2f6341108f2cd4a72799b6b3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:42</sys_updated_on>
+        <ui_id>28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9602452c2f6341108f2cd4a72799b6b3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9602452c2f6341108f2cd4a72799b6b3</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>1a02452c2f6341108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <value>MetroTime Role Request is Complete</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9602452c2f6341108f2cd4a72799b6b3</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>5602452c2f6341108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9602452c2f6341108f2cd4a72799b6b3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>9602452c2f6341108f2cd4a72799b6b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>1202452c2f6341108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6bb18f83-e1ea-4ad6-89a8-2b8832426d3e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:6bb18f83-e1ea-4ad6-89a8-2b8832426d3e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; User Roles Record &amp;gt; Employee Name &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_6bb18f83-e1ea-4ad6-89a8-2b8832426d3e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;This email is to inform you that your MetroTime role has been updated to&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:064f2e55-ead2-4e6a-bab3-0afc47940825}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Role Type"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Role Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_064f2e55-ead2-4e6a-bab3-0afc47940825" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;.&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;If this is correct, please review the Knowledgebase articles on how to properly perform your role.&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;If this is incorrect, please reach out to the MetroTime Admin team as soon as possible to correct this change.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Sincerely,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;MetroTime Team&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:805e7f10-8fc5-4454-99e6-6f57f8aa967e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_805e7f10-8fc5-4454-99e6-6f57f8aa967e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:48b3a178-459d-4b46-ae36-1be0682a7746}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Requested by"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Requested by&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_48b3a178-459d-4b46-ae36-1be0682a7746" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:8e933415-f0aa-441a-9c51-8e0ab2f5e60c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Role Type"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Role Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8e933415-f0aa-441a-9c51-8e0ab2f5e60c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b958ad03-0e7f-4f1b-b903-2d3d65517866}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; State"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;State&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_b958ad03-0e7f-4f1b-b903-2d3d65517866" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>9602452c2f6341108f2cd4a72799b6b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:40:46</sys_created_on>
+        <sys_id>f4e401ec2f6341108f2cd4a72799b6b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.u_requested_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>9602452c2f6341108f2cd4a72799b6b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>d202452c2f6341108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>9602452c2f6341108f2cd4a72799b6b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>5a02452c2f6341108f2cd4a72799b6b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.u_employee_name.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9602452c2f6341108f2cd4a72799b6b3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9602452c2f6341108f2cd4a72799b6b3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN074882882f9749108f2cd4a72799b6f4,162942c82f9749108f2cd4a72799b697,1a02452c2f6341108f2cd4a72799b6e2,31e7ff542fdb89108f2cd4a72799b637,35c87f942fdb89108f2cd4a72799b626,5202452c2f6341108f2cd4a72799b6e3,5602452c2f6341108f2cd4a72799b6e2,7de7ff542fdb89108f2cd4a72799b636,9e02452c2f6341108f2cd4a72799b6e1,9e02452c2f6341108f2cd4a72799b6e2,b5e7ff542fdb89108f2cd4a72799b636,c74882882f9749108f2cd4a72799b6f4,cb4882882f9749108f2cd4a72799b6f3,d62942c82f9749108f2cd4a72799b697,da02452c2f6341108f2cd4a72799b6e2,f1e7ff542fdb89108f2cd4a72799b637,f5c87f942fdb89108f2cd4a72799b626"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 19:02:37</sys_created_on>
+        <sys_id>074882882f9749108f2cd4a72799b6f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 19:02:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f707e107-2b59-42f8-888c-c794fad44dbf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 19:06:23</sys_created_on>
+        <sys_id>162942c82f9749108f2cd4a72799b697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 19:06:23</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4ccb9995-0527-4e2b-94f2-78bea0f8e53a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>1a02452c2f6341108f2cd4a72799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>805e7f10-8fc5-4454-99e6-6f57f8aa967e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:48:42</sys_created_on>
+        <sys_id>31e7ff542fdb89108f2cd4a72799b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:48:42</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>067c3b31-b978-4cc1-897b-6c63bd904fb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requested_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:52:32</sys_created_on>
+        <sys_id>35c87f942fdb89108f2cd4a72799b626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:52:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0eb651f8-b613-4aab-a045-b6e211f21384</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.state}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>5202452c2f6341108f2cd4a72799b6e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b958ad03-0e7f-4f1b-b903-2d3d65517866</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>5602452c2f6341108f2cd4a72799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>064f2e55-ead2-4e6a-bab3-0afc47940825</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:48:42</sys_created_on>
+        <sys_id>7de7ff542fdb89108f2cd4a72799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:48:42</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3cc5fe7-9f71-466f-884b-c3a9030d3bd2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_employee_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>9e02452c2f6341108f2cd4a72799b6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6bb18f83-e1ea-4ad6-89a8-2b8832426d3e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>9e02452c2f6341108f2cd4a72799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8e933415-f0aa-441a-9c51-8e0ab2f5e60c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_department.dept_head.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:48:42</sys_created_on>
+        <sys_id>b5e7ff542fdb89108f2cd4a72799b636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:48:42</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8019313b-8018-4985-8171-39797e0b95d0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 19:02:37</sys_created_on>
+        <sys_id>c74882882f9749108f2cd4a72799b6f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 19:02:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9f0cb1bb-a050-455f-8bde-6c4108a1c890</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_manager_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 19:02:37</sys_created_on>
+        <sys_id>cb4882882f9749108f2cd4a72799b6f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 19:02:37</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>bc7c12ed-8092-4566-937b-655eec588044</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 19:06:23</sys_created_on>
+        <sys_id>d62942c82f9749108f2cd4a72799b697</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 19:06:23</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4e7a3de0-2cb7-4d24-a9dd-c73b6965fb3a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_requested_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:18</sys_created_on>
+        <sys_id>da02452c2f6341108f2cd4a72799b6e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:18</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>48b3a178-459d-4b46-ae36-1be0682a7746</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requested_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:48:42</sys_created_on>
+        <sys_id>f1e7ff542fdb89108f2cd4a72799b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:48:42</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d947807e-982a-4c3c-9c46-61e69a49235e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>1bf24a042f9749108f2cd4a72799b6b6</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:52:32</sys_created_on>
+        <sys_id>f5c87f942fdb89108f2cd4a72799b626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:52:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>911d5cb4-e1ee-4fa2-9dec-e0761d2fe653</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN0a02452c2f6341108f2cd4a72799b6a6,3615c2c42f9749108f2cd4a72799b662,3e15c2c42f9749108f2cd4a72799b665"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:17</sys_created_on>
+        <sys_id>0a02452c2f6341108f2cd4a72799b6a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:48:40</sys_created_on>
+        <sys_id>3615c2c42f9749108f2cd4a72799b662</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 18:48:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 18:48:40</sys_created_on>
+        <sys_id>3e15c2c42f9749108f2cd4a72799b665</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 18:48:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1bf24a042f9749108f2cd4a72799b6b6^sys_idNOT IN989a91942f9389108f2cd4a72799b644"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"989a91942f9389108f2cd4a72799b644","name":"plan","plan_signature":null}}</plan>
+        <plan_id>1bf24a042f9749108f2cd4a72799b6b6</plan_id>
+        <snapshot>b68a51942f9389108f2cd4a72799b659</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>989a91942f9389108f2cd4a72799b644</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <trigger display_value="">0e2781602fa341108f2cd4a72799b696</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1bf24a042f9749108f2cd4a72799b6b6"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify of New Role creation and pending approval/assignement</description>
+        <internal_name>metrotime_new_role_notification</internal_name>
+        <label_cache>[{"name":"Updated_1.current.u_requested_by.email","label":"Trigger - Record Updated➛User Roles Record➛Requested by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1d22e026-7aa1-41ca-8c77-2fd16957b9e5.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛User Roles Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"state","choices":[{"used":false,"label":"Pending","image":"","reference":false,"selected":false,"rawLabel":"Pending","missing":false,"value":"-5","parameters":{"name":"task"}},{"used":false,"label":"Open","image":"","reference":false,"selected":false,"rawLabel":"Open","missing":false,"value":"1","parameters":{"name":"task"}},{"used":false,"label":"Work in Progress","image":"","reference":false,"selected":false,"rawLabel":"Work in Progress","missing":false,"value":"2","parameters":{"name":"task"}},{"used":false,"label":"Closed Complete","image":"","reference":false,"selected":false,"rawLabel":"Closed Complete","missing":false,"value":"3","parameters":{"name":"task"}},{"used":false,"label":"Closed Incomplete","image":"","reference":false,"selected":false,"rawLabel":"Closed Incomplete","missing":false,"value":"4","parameters":{"name":"task"}},{"used":false,"label":"Closed Skipped","image":"","reference":false,"selected":false,"rawLabel":"Closed Skipped","missing":false,"value":"7","parameters":{"name":"task"}}]},{"name":"Updated_1.current.u_requested_by","label":"Trigger - Record Updated➛User Roles Record➛Requested by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_requested_by"},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛User Roles Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_746768_metrotime_user_roles","column_name":"number"},{"name":"Updated_1.current.u_role_type","label":"Trigger - Record Updated➛User Roles Record➛Role Type","reference":"","reference_display":"Role Type","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_role_type","choices":[{"used":false,"label":"Timekeeper","image":"","reference":false,"selected":false,"rawLabel":"Timekeeper","missing":false,"value":"timekeeper","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Administrator","image":"","reference":false,"selected":false,"rawLabel":"Payroll Administrator","missing":false,"value":"payroll administrator","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Manager","image":"","reference":false,"selected":false,"rawLabel":"Payroll Manager","missing":false,"value":"payroll manager","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Processor","image":"","reference":false,"selected":false,"rawLabel":"Payroll Processor","missing":false,"value":"payroll processor","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"FMLA Admin","image":"","reference":false,"selected":false,"rawLabel":"FMLA Admin","missing":false,"value":"fmla admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"IT Admin","image":"","reference":false,"selected":false,"rawLabel":"IT Admin","missing":false,"value":"it admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Leave Admin","image":"","reference":false,"selected":false,"rawLabel":"Leave Admin","missing":false,"value":"leave admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Reports Admin","image":"","reference":false,"selected":false,"rawLabel":"Reports Admin","missing":false,"value":"reports admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Workforce Admin","image":"","reference":false,"selected":false,"rawLabel":"Workforce Admin","missing":false,"value":"workforce admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Support Team","image":"","reference":false,"selected":false,"rawLabel":"Support Team","missing":false,"value":"support team","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"System Administrator","image":"","reference":false,"selected":false,"rawLabel":"System Administrator","missing":false,"value":"system administrator","parameters":{"name":"x_746768_metrotime_user_roles"}}]},{"name":"Updated_1.current.u_employee_name.first_name","label":"Trigger - Record Updated➛User Roles Record➛Employee Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Updated_1.current.u_employee_name.email","label":"Trigger - Record Updated➛User Roles Record➛Employee Name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.__dont_treat_as_error__","label":"1 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.__action_status__","label":"1 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a.email","label":"1 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.table_name","label":"3 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d41df65d-9d8c-49ba-bed6-b784d323df24.record","label":"3 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.record.assignment_group.email","label":"1 - Update Record➛User Roles Record➛Assignment group➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email"},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.__dont_treat_as_error__","label":"10 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.__action_status__","label":"10 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"0b264433-faea-4bae-8a34-d2fd6e585d58.email","label":"10 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_payroll.name","label":"Trigger - Record Created➛User Roles Record➛Approved by (Payroll)➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.table_name","label":"4 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ff440795-4ea2-4ad1-868f-a1266d3f6b8b.record","label":"4 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_dept_dir.department.name","label":"Trigger - Record Created➛User Roles Record➛Approved by (Department Director)➛Department➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmn_department","column_name":"name"},{"name":"Created_1.current.u_requested_by.name","label":"Trigger - Record Created➛User Roles Record➛Requested by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9f927cef-f219-42c4-beb3-d7a8d3b701b4.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.cb5990e32f07c5108f2cd4a72799b612}}","label":"Department Heads - Record Created","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"{{static.cc79743d2fc341108f2cd4a72799b61a}}","label":"Payroll - Record Created","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference"},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.__dont_treat_as_error__","label":"5 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.__action_status__","label":"5 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b05c817f-d5e4-42b3-99c9-9e8ff28e058d.approval_state","label":"5 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_department.dept_head.first_name","label":"Trigger - Record Created➛User Roles Record➛Department Name➛Department head➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_department.dept_head.email","label":"Trigger - Record Created➛User Roles Record➛Department Name➛Department head➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.table_name","label":"10 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5c37231a-9f27-49c4-ae65-e05af89651d3.record","label":"10 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.__dont_treat_as_error__","label":"6 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.__action_status__","label":"6 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.table_name","label":"6 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcaf9e8c-f3ee-45aa-80cf-c794f16cf932.record","label":"6 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.table_name","label":"5 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a94bb96-9c7d-4fa1-9d34-f1377b425582.record","label":"5 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_role_type","label":"Trigger - Record Created➛User Roles Record➛Role Type","reference":"","reference_display":"Role Type","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_role_type","choices":[{"used":false,"label":"Timekeeper","image":"","reference":false,"selected":false,"rawLabel":"Timekeeper","missing":false,"value":"timekeeper","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Administrator","image":"","reference":false,"selected":false,"rawLabel":"Payroll Administrator","missing":false,"value":"payroll administrator","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Manager","image":"","reference":false,"selected":false,"rawLabel":"Payroll Manager","missing":false,"value":"payroll manager","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Payroll Processor","image":"","reference":false,"selected":false,"rawLabel":"Payroll Processor","missing":false,"value":"payroll processor","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"FMLA Admin","image":"","reference":false,"selected":false,"rawLabel":"FMLA Admin","missing":false,"value":"fmla admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"IT Admin","image":"","reference":false,"selected":false,"rawLabel":"IT Admin","missing":false,"value":"it admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Leave Admin","image":"","reference":false,"selected":false,"rawLabel":"Leave Admin","missing":false,"value":"leave admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Reports Admin","image":"","reference":false,"selected":false,"rawLabel":"Reports Admin","missing":false,"value":"reports admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Workforce Admin","image":"","reference":false,"selected":false,"rawLabel":"Workforce Admin","missing":false,"value":"workforce admin","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"Support Team","image":"","reference":false,"selected":false,"rawLabel":"Support Team","missing":false,"value":"support team","parameters":{"name":"x_746768_metrotime_user_roles"}},{"used":false,"label":"System Administrator","image":"","reference":false,"selected":false,"rawLabel":"System Administrator","missing":false,"value":"system administrator","parameters":{"name":"x_746768_metrotime_user_roles"}}]},{"name":"Created_1.current.number","label":"Trigger - Record Created➛User Roles Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_746768_metrotime_user_roles","column_name":"number"},{"name":"Created_1.current.u_manager_name.first_name","label":"Trigger - Record Created➛User Roles Record➛Manager Name➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.u_manager_name.email","label":"Trigger - Record Created➛User Roles Record➛Manager Name➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.__dont_treat_as_error__","label":"2 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.__action_status__","label":"2 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"31b115a2-992c-4647-8eeb-7830be415aba.email","label":"2 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.record","label":"1 - Update Record➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.table_name","label":"1 - Update Record➛User Roles Table","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"06c9d5dc-706c-4738-81e3-86d069adf953.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛User Roles Record","reference":"x_746768_metrotime_user_roles","reference_display":"User Roles","type":"reference","base_type":"reference","attributes":{}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66878c9c-3a8a-4a96-b3ed-41fd7a98eccb.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_app_dept_dir","label":"Trigger - Record Created➛User Roles Record➛Approved by (Department Director)","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_app_dept_dir"},{"name":"Created_1.current.u_app_payroll","label":"Trigger - Record Created➛User Roles Record➛Approved by (Payroll)","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_746768_metrotime_user_roles","column_name":"u_app_payroll"},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.email","label":"3 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.__action_status__","label":"3 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"b3cfef29-c96e-44b7-8273-671318d3340c.__dont_treat_as_error__","label":"3 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛User Roles Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_746768_metrotime_user_roles","column_name":"approval","choices":[{"used":false,"label":"Not Yet Requested","image":"","reference":false,"selected":false,"rawLabel":"Not Yet Requested","missing":false,"value":"not requested","parameters":{"name":"task"}},{"used":false,"label":"Requested","image":"","reference":false,"selected":false,"rawLabel":"Requested","missing":false,"value":"requested","parameters":{"name":"task"}},{"used":false,"label":"Approved","image":"","reference":false,"selected":false,"rawLabel":"Approved","missing":false,"value":"approved","parameters":{"name":"task"}},{"used":false,"label":"Rejected","image":"","reference":false,"selected":false,"rawLabel":"Rejected","missing":false,"value":"rejected","parameters":{"name":"task"}}]},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.email","label":"5 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.__action_status__","label":"5 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"94f41c35-4d23-4fc0-9e6c-05c7418f3fe4.__dont_treat_as_error__","label":"5 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.assignment_group.email","label":"Trigger - Record Created➛User Roles Record➛Assignment group➛Group email","reference":"","reference_display":"Group email","type":"email","base_type":"email","parent_table_name":"sys_user_group","column_name":"email"},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.email","label":"6 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.__action_status__","label":"6 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ca821c3-755d-430b-83ff-cce316049d50.__dont_treat_as_error__","label":"6 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.u_requested_by.email","label":"Trigger - Record Created➛User Roles Record➛Requested by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.u_requested_by.first_name","label":"Trigger - Record Created➛User Roles Record➛Requested by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"}]</label_cache>
+        <master>true</master>
+        <name>MetroTime New Role Notification</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="MetroTime New Role Notification">1bf24a042f9749108f2cd4a72799b6b6</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b68a51942f9389108f2cd4a72799b659</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:40</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b68a51942f9389108f2cd4a72799b659^sys_idNOT INa78a51942f9389108f2cd4a72799b6d1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="MetroTime New Role Notification">b68a51942f9389108f2cd4a72799b659</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>a78a51942f9389108f2cd4a72799b6d1</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:41</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a78a51942f9389108f2cd4a72799b6d1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a78a51942f9389108f2cd4a72799b6d1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>0d12c52c2f6341108f2cd4a72799b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a78a51942f9389108f2cd4a72799b6d1</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>4912c52c2f6341108f2cd4a72799b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a78a51942f9389108f2cd4a72799b6d1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>738a51942f9389108f2cd4a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <value>x_746768_metrotime_user_roles</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a78a51942f9389108f2cd4a72799b6d1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>bf8a51942f9389108f2cd4a72799b6d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a78a51942f9389108f2cd4a72799b6d1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>cd12c52c2f6341108f2cd4a72799b6ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <value>x_746768_metrotime_user_roles</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=a78a51942f9389108f2cd4a72799b6d1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b68a51942f9389108f2cd4a72799b659^sys_idNOT IN3a8a51942f9389108f2cd4a72799b65a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b68a51942f9389108f2cd4a72799b659</id>
+        <name>MetroTime New Role Notification</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:12</sys_created_on>
+        <sys_id>3a8a51942f9389108f2cd4a72799b65a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3a8a51942f9389108f2cd4a72799b65a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b68a51942f9389108f2cd4a72799b659^sys_idNOT IN7c12c52c2f6341108f2cd4a72799b688,8f8a51942f9389108f2cd4a72799b65b,cf8a51942f9389108f2cd4a72799b677"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD75278160c8a34110b1c162dd7f2c052e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="MetroTime New Role Notification">b68a51942f9389108f2cd4a72799b659</model>
+        <model_id>b68a51942f9389108f2cd4a72799b659</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:28</sys_created_on>
+        <sys_id>7c12c52c2f6341108f2cd4a72799b688</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="MetroTime New Role Notification">b68a51942f9389108f2cd4a72799b659</model>
+        <model_id>b68a51942f9389108f2cd4a72799b659</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:12</sys_created_on>
+        <sys_id>8f8a51942f9389108f2cd4a72799b65b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="MetroTime New Role Notification">b68a51942f9389108f2cd4a72799b659</model>
+        <model_id>b68a51942f9389108f2cd4a72799b659</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:13</sys_created_on>
+        <sys_id>cf8a51942f9389108f2cd4a72799b677</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b68a51942f9389108f2cd4a72799b659^sys_idNOT IN4112c52c2f6341108f2cd4a72799b6b6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="MetroTime New Role Notification">b68a51942f9389108f2cd4a72799b659</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>4112c52c2f6341108f2cd4a72799b6b6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:40</sys_updated_on>
+        <ui_id>28f7f0ce-5b98-4fe8-882a-abd57dcf1b6a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4112c52c2f6341108f2cd4a72799b6b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4112c52c2f6341108f2cd4a72799b6b6</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>0512c52c2f6341108f2cd4a72799b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4112c52c2f6341108f2cd4a72799b6b6</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>c512c52c2f6341108f2cd4a72799b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <value>MetroTime Role Request is Complete</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4112c52c2f6341108f2cd4a72799b6b6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>4112c52c2f6341108f2cd4a72799b6b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>cd12c52c2f6341108f2cd4a72799b6b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;Hello&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:6bb18f83-e1ea-4ad6-89a8-2b8832426d3e}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:6bb18f83-e1ea-4ad6-89a8-2b8832426d3e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Updated &amp;gt; User Roles Record &amp;gt; Employee Name &amp;gt; First name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;First name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_6bb18f83-e1ea-4ad6-89a8-2b8832426d3e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;This email is to inform you that your MetroTime role has been updated to&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:064f2e55-ead2-4e6a-bab3-0afc47940825}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Role Type"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Role Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_064f2e55-ead2-4e6a-bab3-0afc47940825" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;.&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;If this is correct, please review the Knowledgebase articles on how to properly perform your role.&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;If this is incorrect, please reach out to the MetroTime Admin team as soon as possible to correct this change.&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Sincerely,&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;MetroTime Team&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:805e7f10-8fc5-4454-99e6-6f57f8aa967e}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Number"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_805e7f10-8fc5-4454-99e6-6f57f8aa967e" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:48b3a178-459d-4b46-ae36-1be0682a7746}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Requested by"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Requested by&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_48b3a178-459d-4b46-ae36-1be0682a7746" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;, &lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:8e933415-f0aa-441a-9c51-8e0ab2f5e60c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; Role Type"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Role Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_8e933415-f0aa-441a-9c51-8e0ab2f5e60c" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;,&amp;nbsp;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b958ad03-0e7f-4f1b-b903-2d3d65517866}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger &amp;gt; User Roles Record &amp;gt; State"&gt;&lt;span class="pill-start"&gt;Trigger&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;State&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_b958ad03-0e7f-4f1b-b903-2d3d65517866" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>4112c52c2f6341108f2cd4a72799b6b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:50:39</sys_created_on>
+        <sys_id>7d2781602fa341108f2cd4a72799b62d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:50:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.u_requested_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>4112c52c2f6341108f2cd4a72799b6b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>8112c52c2f6341108f2cd4a72799b6b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>4112c52c2f6341108f2cd4a72799b6b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:29</sys_created_on>
+        <sys_id>0d12c52c2f6341108f2cd4a72799b6b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Updated_1.current.u_employee_name.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4112c52c2f6341108f2cd4a72799b6b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4112c52c2f6341108f2cd4a72799b6b6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b68a51942f9389108f2cd4a72799b659^sys_idNOT IN1512092c2f6341108f2cd4a72799b607,1d12092c2f6341108f2cd4a72799b605,338a51942f9389108f2cd4a72799b6d4,3f8a51942f9389108f2cd4a72799b6d3,5112092c2f6341108f2cd4a72799b606,5112092c2f6341108f2cd4a72799b607,5512092c2f6341108f2cd4a72799b606,5d12092c2f6341108f2cd4a72799b606,7af8f3d42fdb89108f2cd4a72799b6ca,b38a51942f9389108f2cd4a72799b6d4,b6f8f3d42fdb89108f2cd4a72799b6ca,b78a51942f9389108f2cd4a72799b6d3,bf8a51942f9389108f2cd4a72799b6d3,f2f8f3d42fdb89108f2cd4a72799b6ca,f6f8f3d42fdb89108f2cd4a72799b6c9,faf8f3d42fdb89108f2cd4a72799b6c9,fef8f3d42fdb89108f2cd4a72799b6c9"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>1512092c2f6341108f2cd4a72799b607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8e933415-f0aa-441a-9c51-8e0ab2f5e60c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>1d12092c2f6341108f2cd4a72799b605</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>805e7f10-8fc5-4454-99e6-6f57f8aa967e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>338a51942f9389108f2cd4a72799b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4e7a3de0-2cb7-4d24-a9dd-c73b6965fb3a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>3f8a51942f9389108f2cd4a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4ccb9995-0527-4e2b-94f2-78bea0f8e53a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_employee_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>5112092c2f6341108f2cd4a72799b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>6bb18f83-e1ea-4ad6-89a8-2b8832426d3e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_requested_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>5112092c2f6341108f2cd4a72799b607</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>48b3a178-459d-4b46-ae36-1be0682a7746</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>5512092c2f6341108f2cd4a72799b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>064f2e55-ead2-4e6a-bab3-0afc47940825</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.state}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:30</sys_created_on>
+        <sys_id>5d12092c2f6341108f2cd4a72799b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:30</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b958ad03-0e7f-4f1b-b903-2d3d65517866</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>7af8f3d42fdb89108f2cd4a72799b6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>911d5cb4-e1ee-4fa2-9dec-e0761d2fe653</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>b38a51942f9389108f2cd4a72799b6d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9f0cb1bb-a050-455f-8bde-6c4108a1c890</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requested_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>b6f8f3d42fdb89108f2cd4a72799b6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0eb651f8-b613-4aab-a045-b6e211f21384</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>b78a51942f9389108f2cd4a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>f707e107-2b59-42f8-888c-c794fad44dbf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_manager_name.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:15</sys_created_on>
+        <sys_id>bf8a51942f9389108f2cd4a72799b6d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:15</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>bc7c12ed-8092-4566-937b-655eec588044</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_department.dept_head.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>f2f8f3d42fdb89108f2cd4a72799b6ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8019313b-8018-4985-8171-39797e0b95d0</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_role_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>f6f8f3d42fdb89108f2cd4a72799b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>067c3b31-b978-4cc1-897b-6c63bd904fb9</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.u_requested_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>faf8f3d42fdb89108f2cd4a72799b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d947807e-982a-4c3c-9c46-61e69a49235e</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>b68a51942f9389108f2cd4a72799b659</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 21:53:25</sys_created_on>
+        <sys_id>fef8f3d42fdb89108f2cd4a72799b6c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 21:53:25</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c3cc5fe7-9f71-466f-884b-c3a9030d3bd2</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b68a51942f9389108f2cd4a72799b659"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659^sys_idNOT IN0b8a51942f9389108f2cd4a72799b67c,3c12c52c2f6341108f2cd4a72799b68d,838a51942f9389108f2cd4a72799b674"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:13</sys_created_on>
+        <sys_id>0b8a51942f9389108f2cd4a72799b67c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-15 13:28:28</sys_created_on>
+        <sys_id>3c12c52c2f6341108f2cd4a72799b68d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-15 13:28:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-02 10:21:13</sys_created_on>
+        <sys_id>838a51942f9389108f2cd4a72799b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-02 10:21:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b68a51942f9389108f2cd4a72799b659"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b68a51942f9389108f2cd4a72799b659"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b68a51942f9389108f2cd4a72799b659"/>
+    <sys_hub_flow action="update">
+        <sys_id>1bf24a042f9749108f2cd4a72799b6b6</sys_id>
+        <latest_snapshot>b68a51942f9389108f2cd4a72799b659</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

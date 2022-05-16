@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="User Roles" max_length="40" name="x_746768_metrotime_user_roles" sizeclass="35" type="collection">
+        <element label="Add" max_length="40" name="u_add" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Action" mandatory="true" max_length="40" name="u_add_remove_role" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="Add Role" sequence="0" value="add role"/>
+                <element inactive_on_update="false" label="Remove Role" sequence="1" value="remove role"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Approved by (Department Director)" max_length="32" name="u_app_dept_dir" reference="sys_user" reference_qual="roles=x_746768_metrotime.WMATA Department Heads^departmentSAMEASdepartment^EQ" reference_qual_condition="roles=x_746768_metrotime.WMATA Department Heads^departmentSAMEASdepartment^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Approved by (Payroll)" max_length="32" name="u_app_payroll" reference="sys_user" reference_qual="department=baf9e4e92f0701108f2cd4a72799b66f^EQ" reference_qual_condition="department=baf9e4e92f0701108f2cd4a72799b66f^EQ" type="reference"/>
+        <element label="Date Requested" max_length="40" name="u_date_requested" read_only="true" type="insert_timestamp"/>
+        <element attributes="encode_utf8=false" label="Department Name" mandatory="true" max_length="32" name="u_department" reference="cmn_department" reference_qual="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" reference_qual_condition="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" type="reference"/>
+        <element attributes="encode_utf8=false" label="Employee Name" mandatory="true" max_length="32" name="u_employee_name" reference="sys_user" reference_qual="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" reference_qual_condition="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" type="reference"/>
+        <element dependent="u_employee_name" dependent_on_field="u_employee_name" dynamic_creation="true" label="Employee ID" mandatory="true" max_length="32" name="u_emp_id" reference_qual="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" reference_qual_condition="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Manager Employee ID" mandatory="true" max_length="40" name="u_manager_id" reference_qual="employee_numberISNOTEMPTY^EQ" reference_qual_condition="employee_numberISNOTEMPTY^EQ" type="string" use_dependent_field="true"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUser().getManager()" dependent="u_employee_name" dependent_on_field="u_employee_name" dynamic_default_value="24bc51ca2fc381108f2cd4a72799b6b2" label="Manager Name" mandatory="true" max_length="32" name="u_manager_name" reference="sys_user" reference_qual="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" reference_qual_condition="company=7919a8e92f0701108f2cd4a72799b6e0^EQ" type="reference" use_dependent_field="true" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Reason for Change" mandatory="true" max_length="500" name="u_reason" type="string"/>
+        <element label="Remove" max_length="40" name="u_remove" type="boolean"/>
+        <element attributes="encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requested by" mandatory="true" max_length="32" name="u_requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="timekeeper" label="Role Type" mandatory="true" max_length="40" name="u_role_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Timekeeper" sequence="0" value="timekeeper"/>
+                <element inactive_on_update="false" label="Payroll Administrator" sequence="1" value="payroll administrator"/>
+                <element inactive_on_update="false" label="Payroll Manager" sequence="2" value="payroll manager"/>
+                <element inactive_on_update="false" label="Payroll Processor" sequence="3" value="payroll processor"/>
+                <element inactive_on_update="false" label="FMLA Admin" sequence="4" value="fmla admin"/>
+                <element inactive_on_update="false" label="IT Admin" sequence="5" value="it admin"/>
+                <element inactive_on_update="false" label="Leave Admin" sequence="6" value="leave admin"/>
+                <element inactive_on_update="false" label="Reports Admin" sequence="7" value="reports admin"/>
+                <element inactive_on_update="false" label="Workforce Admin" sequence="8" value="workforce admin"/>
+                <element inactive_on_update="false" label="Support Team" sequence="9" value="support team"/>
+                <element inactive_on_update="false" label="System Administrator" sequence="10" value="system administrator"/>
+            </choice>
+        </element>
+    </element>
+</database>

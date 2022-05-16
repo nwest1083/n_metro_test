@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_746768_metrotime.GetEmployeeID</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Script inlcude to return an employee ID. The calling client-side script passes a sys_id for a user table record.</description>
+        <name>GetEmployeeID</name>
+        <script><![CDATA[var GetEmployeeID = Class.create();
+GetEmployeeID.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+getUserInformation: function(){
+		var result = {};
+		result.employee_id = "";
+		result.employee_name = "";
+		result.employee_id = "";
+		result.employee_number = "";
+		result.manager_id = "";
+		result.manager_name = "";
+		result.manager_id = "";
+		result.manager_number = "";
+
+		var gr = new GlideRecord("sys_user");
+		if (gr.get(this.getParameter("sysparm_user_id"))){
+			result.employee_id = gr.u_employee_name.toString();
+			result.employee_name = gr.u_employee_name.getDisplayValue();
+			result.employee_id = gr.u_employee_name.u_emp_id.toString();
+			result.employee_number = gr.u_employee_name.u_emp_id.getDisplayValue();
+			result.manager_id= gr.u_employee_name.u_manager_name.toString();
+			result.manager_name = gr.u_employee_name.u_manager_name.getDisplayValue();
+			result.manager_id = gr.u_employee_name.u_manager_id.toString();
+			result.manager_number = gr.u_employee_name.u_manager_id.getDisplayValue();
+		}
+		return JSON.stringify(result);
+	},
+    type: 'GetEmployeeID'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 15:53:33</sys_created_on>
+        <sys_id>775151c42fd349108f2cd4a72799b601</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GetEmployeeID</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_script_include_775151c42fd349108f2cd4a72799b601</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 16:05:36</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_script_include_775151c42fd349108f2cd4a72799b601</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_746768_metrotime.GetEmployeeID&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Script inlcude to return an employee ID. The calling client-side script passes a sys_id for a user table record.&lt;/description&gt;&lt;name&gt;GetEmployeeID&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GetEmployeeID = Class.create();
+GetEmployeeID.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+getUserInformation: function(){
+		var result = {};
+		result.employee_id = "";
+		result.employee_name = "";
+		result.employee_id = "";
+		result.employee_number = "";
+		result.manager_id = "";
+		result.manager_name = "";
+		result.manager_id = "";
+		result.manager_number = "";
+
+		var gr = new GlideRecord("sys_user");
+		if (gr.get(this.getParameter("sysparm_user_id"))){
+			result.employee_id = gr.u_employee_name.toString();
+			result.employee_name = gr.u_employee_name.getDisplayValue();
+			result.employee_id = gr.u_employee_name.u_emp_id.toString();
+			result.employee_number = gr.u_employee_name.u_emp_id.getDisplayValue();
+			result.manager_id= gr.u_employee_name.u_manager_name.toString();
+			result.manager_name = gr.u_employee_name.u_manager_name.getDisplayValue();
+			result.manager_id = gr.u_employee_name.u_manager_id.toString();
+			result.manager_number = gr.u_employee_name.u_manager_id.getDisplayValue();
+		}
+		return JSON.stringify(result);
+	},
+    type: 'GetEmployeeID'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-01 15:53:33&lt;/sys_created_on&gt;&lt;sys_id&gt;775151c42fd349108f2cd4a72799b601&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetEmployeeID&lt;/sys_name&gt;&lt;sys_package display_value="MetroTime" source="x_746768_metrotime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="MetroTime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_775151c42fd349108f2cd4a72799b601&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-01 16:05:36&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2134715660</payload_hash>
+        <record_name>GetEmployeeID</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 16:05:36</sys_created_on>
+        <sys_id>cecf51cc2fd349108f2cd4a72799b6bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180805ec6e00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 16:05:36</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c6cf51ccead349109044650bed6717bc</update_guid>
+        <update_guid_history>c6cf51ccead349109044650bed6717bc:2134715660,2d0d1540b3174910b927e522bda0e864:-2074485012</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-01 16:14:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>027835d686594a43842d331620d90221</sys_id>
+        <sys_metadata>775151c42fd349108f2cd4a72799b601</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetEmployeeID</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_script_include_775151c42fd349108f2cd4a72799b601</sys_update_name>
+        <sys_update_version display_value="sys_script_include_775151c42fd349108f2cd4a72799b601">cecf51cc2fd349108f2cd4a72799b6bc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-01 16:14:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>true</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_746768_metrotime_user_roles</collection>
+        <condition>current.state.changesTo('Approved')</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_746768_metrotime_user_roles">approvalCHANGESTOapproved^EQ<item display_value="Approved" endquery="false" field="approval" goto="false" newquery="false" operator="CHANGESTO" or="false" value="approved"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Department Approval</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>x_746768_metrotime.WMATA Department Heads</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-07 12:51:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>899c6f392f9781108f2cd4a72799b696</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Department Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_script_899c6f392f9781108f2cd4a72799b696</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 19:06:58</sys_updated_on>
+        <template>u_app_dept_dirDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ</template>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=899c6f392f9781108f2cd4a72799b696"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_script_899c6f392f9781108f2cd4a72799b696</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;true&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_746768_metrotime_user_roles&lt;/collection&gt;&lt;condition&gt;current.state.changesTo('Approved')&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_746768_metrotime_user_roles"&gt;approvalCHANGESTOapproved^EQ&lt;item display_value="Approved" endquery="false" field="approval" goto="false" newquery="false" operator="CHANGESTO" or="false" value="approved"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Department Approval&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions&gt;x_746768_metrotime.WMATA Department Heads&lt;/role_conditions&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-05-07 12:51:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;899c6f392f9781108f2cd4a72799b696&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Department Approval&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="MetroTime" source="x_746768_metrotime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="MetroTime"&gt;5f75a4e52f0701108f2cd4a72799b60e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_899c6f392f9781108f2cd4a72799b696&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-05-11 19:06:58&lt;/sys_updated_on&gt;&lt;template&gt;u_app_dept_dirDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ&lt;/template&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=899c6f392f9781108f2cd4a72799b696"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2025099379</payload_hash>
+        <record_name>Department Approval</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 19:06:58</sys_created_on>
+        <sys_id>8c39ed932f1f81108f2cd4a72799b684</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180b48469da0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 19:06:58</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>cc39a9df54db8110ccfb441e365076f2</update_guid>
+        <update_guid_history>cc39a9df54db8110ccfb441e365076f2:-2025099379,6ee7788f269b4110ffc27ab0f639c4bf:568130906,6897fc4f1c9b41109004c237b5fa7e2e:-988198995,c6f13372efd74110051c0a85a5c337a9:1616769991,fb21fffe8a9741106d29864314fed363:1404028301,8e217bfe5e9741105b153cafc61d87da:297559232,d548c91e525bc1100dad4d887b4e7129:-1253068704,f15681da695bc11085dd6d1c51767af5:-273659091,bb3681da1e5bc110c9206557d7cdbe6b:784355264,a536419ae45bc1105e53665da56b0858:-1736693459,e121c196fa5bc1101c3c8fe534a8d8a1:-331475240,67a08552fc5bc11021b972c1332f3628:301176154,a6dd63b9e5978110ad864558bcb2b29f:966020091,dbdc63799a978110eb07f9ab016ae4a1:-1056758783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-11 22:30:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>b080a0f09d46455c864a690141632524</sys_id>
+        <sys_metadata>899c6f392f9781108f2cd4a72799b696</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Department Approval</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent display_value="User Roles">75df5cf12f8341108f2cd4a72799b6ce</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_script_899c6f392f9781108f2cd4a72799b696</sys_update_name>
+        <sys_update_version display_value="sys_script_899c6f392f9781108f2cd4a72799b696">8c39ed932f1f81108f2cd4a72799b684</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-11 22:30:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

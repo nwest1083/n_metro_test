@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>u_remove</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-07 19:53:49</sys_created_on>
+        <sys_id>dc8d494e2fdb81108f2cd4a72799b6da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_remove</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_ui_policy_action_dc8d494e2fdb81108f2cd4a72799b6da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-07 19:53:49</sys_updated_on>
+        <table>x_746768_metrotime_user_roles</table>
+        <ui_policy display_value="Add is Visible - Remove is Not Visible">586dc54e2fdb81108f2cd4a72799b658</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</application>
+        <file_path/>
+        <instance_id>ca4e5a7ddbdfd78052e3f70fbf9619b3</instance_id>
+        <instance_name>dev64996</instance_name>
+        <name>sys_ui_policy_action_dc8d494e2fdb81108f2cd4a72799b6da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>u_remove</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-05-07 19:53:49</sys_created_on><sys_id>dc8d494e2fdb81108f2cd4a72799b6da</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_remove</sys_name><sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package><sys_policy/><sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope><sys_update_name>sys_ui_policy_action_dc8d494e2fdb81108f2cd4a72799b6da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-05-07 19:53:49</sys_updated_on><table>x_746768_metrotime_user_roles</table><ui_policy display_value="Add is Visible - Remove is Not Visible">586dc54e2fdb81108f2cd4a72799b658</ui_policy><visible>false</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1772715613</payload_hash>
+        <record_name>u_remove</record_name>
+        <reverted_from/>
+        <source>e7756ce52f0701108f2cd4a72799b610</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-07 19:53:49</sys_created_on>
+        <sys_id>eb8d494e2fdb81108f2cd4a72799b6e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>180a015dedc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-07 19:53:49</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>278d494e35db8110e957a247088c8de0</update_guid>
+        <update_guid_history>278d494e35db8110e957a247088c8de0:1772715613</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-07 19:54:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>1be6ff668f3d4e5590050895c287fa31</sys_id>
+        <sys_metadata>dc8d494e2fdb81108f2cd4a72799b6da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_remove</sys_name>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_scope_delete display_value="">04f5cf11d226451e979b15c8cc1c7b44</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_dc8d494e2fdb81108f2cd4a72799b6da</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_dc8d494e2fdb81108f2cd4a72799b6da">eb8d494e2fdb81108f2cd4a72799b6e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-07 19:54:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

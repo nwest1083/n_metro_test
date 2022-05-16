@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Workspace for MetroTime</description>
+        <name>MetroTime Agent Workspace</name>
+        <parent display_value="Base Agent Workspace theme">c012213bc39b10101d590cf06e40dd32</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-08 12:56:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2767f81e2f1bc1108f2cd4a72799b68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MetroTime Agent Workspace</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+        <sys_update_name>sys_ux_theme_2767f81e2f1bc1108f2cd4a72799b68c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-08 12:56:18</sys_updated_on>
+        <theme/>
+    </sys_ux_theme>
+</record_update>

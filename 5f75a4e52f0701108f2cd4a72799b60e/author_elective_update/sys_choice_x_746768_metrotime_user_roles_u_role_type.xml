@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_role_type" table="x_746768_metrotime_user_roles" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_role_type</element>
+            <name>x_746768_metrotime_user_roles</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_id>308da0712fc341108f2cd4a72799b6b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_role_type</sys_name>
+            <sys_package display_value="MetroTime" source="x_746768_metrotime">5f75a4e52f0701108f2cd4a72799b60e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="MetroTime">5f75a4e52f0701108f2cd4a72799b60e</sys_scope>
+            <sys_update_name>sys_choice_x_746768_metrotime_user_roles_u_role_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Timekeeper</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>748da0712fc341108f2cd4a72799b68b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>timekeeper</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Payroll Administrator</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c8da0712fc341108f2cd4a72799b6b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>payroll administrator</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Payroll Manager</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc8da0712fc341108f2cd4a72799b6b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>payroll manager</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Payroll Processor</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b08da0712fc341108f2cd4a72799b6b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>payroll processor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FMLA Admin</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>748da0712fc341108f2cd4a72799b6ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>fmla admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IT Admin</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>388da0712fc341108f2cd4a72799b6bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>it admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Leave Admin</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f88da0712fc341108f2cd4a72799b6be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>leave admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reports Admin</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc8da0712fc341108f2cd4a72799b6c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>reports admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Workforce Admin</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>708da0712fc341108f2cd4a72799b6c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>workforce admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Support Team</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>348da0712fc341108f2cd4a72799b6c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>support team</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_role_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>System Administrator</label>
+            <language>en</language>
+            <name>x_746768_metrotime_user_roles</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-04-24 12:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c58da0712fc341108f2cd4a72799b6c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-04-24 12:39:39</sys_updated_on>
+            <value>system administrator</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
